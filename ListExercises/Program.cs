@@ -35,7 +35,9 @@ namespace ListExercises
             List<double> nums = new List<double> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             Console.WriteLine("the sum of the evens in the list is " + SumOfEvens(nums));
             string sentences = "I would not, could not, in a box. I would not, could not with a fox. I will not eat them in a house. I will not eat them with a mouse.";
-            List<string> brokenup = new List<string>(sentences.Split(' '));
+            string sentences1 = sentences.Replace(",", " ");
+            string sentences2 = sentences1.Replace(".", " ");
+            List<string> brokenup = new List<string>(sentences2.Split(' '));
             List<string> words = new List<string> { "hello", "five", "seven", "yellow", "apple", "sdfsd" };
             PrintIfLengthFive(words);
             PrintIfLengthFive(brokenup);
